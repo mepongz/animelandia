@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +18,80 @@
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(0,0,0);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* NAVIGATION */
+#navigation-menu{
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+/* SEACH BAR */
+#search-bar p{
+  margin: 5px 0;
+}
+
+#search-bar #search-box {
+  border: 1px solid #B3B3B3;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px; 
+  
+} 
+
+#search-bar #search-button {
+  background-color: #DB202C;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100px;
+}
+
+
+/* TOP AIRING */
+
+.top-anime-item{
+  width: 210px;
+  float: left;
+  margin: 0 10px;
+}
+.top-anime-spot{
+  font-size: 200px;
+  -webkit-text-stroke: 5px #BABABA;
+  float: left;
+  top: -41px;
+  position: absolute;
+}
+
+.top-anime-cover{
+  margin-left: 60px;
+}
+
+.top-anime-media-details{
+  height: 190px;
+  overflow: hidden;
+}
+
+.top-anime-details{
+  margin-left: 46px;
+}
+
+.top-anime-item-container > div{
+  position: relative;
+}
+
+.top-anime-item-container img{
+  width: 147px;
 }
